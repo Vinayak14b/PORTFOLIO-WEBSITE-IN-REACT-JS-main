@@ -1,0 +1,80 @@
+header{
+    height: 100vh;
+    padding-top: 7rem;
+    overflow: hidden;
+}
+h1{
+    font-size: 32px;
+}
+.header__container{
+    padding-top: 8rem;
+    text-align: left;
+    height: 100%;
+    position: relative;
+}
+.king{
+    font-size: 120%;
+}
+.hello{
+    font-size: 300%;
+}
+
+/*-------CTA----------*/
+.cta{
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: left;
+}
+
+/*-------Socials-------*/
+.header__socials{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.3rem;
+    position: absolute;
+    left: 0;
+    bottom: 11rem;
+}
+
+
+/*--------------Image----------*/
+.me{
+    width: 40rem;
+    height: 35rem;
+    position: absolute;
+    left: calc(70% - 17rem);
+    margin-top: -17rem;
+    /* border-radius: 12rem 12rem 0 0; */
+    overflow: hidden;
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+}
+
+
+
+/*------------------MEDIA QUERIES (RESPONSIVE)[MEDIUM DEVICES]---------------*/
+@media screen and (max-width: 1024px) {
+    header{
+        height: 95vh;
+    }
+    .me{
+        display: none;
+    }
+    .header__socials{
+        margin-top: auto;
+    }
+}
+/*------------------MEDIA QUERIES (RESPONSIVE)[SMALL DEVICES]---------------*/
+@media screen and (max-width: 600px) {
+    header{
+        height: 100vh;
+    }
+    .me{
+        display:none;
+        
+    }
+    .header__socials{
+        margin-top: 2rem;
+    }
+}
